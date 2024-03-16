@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/imágenes/icons8-a-minúscula-16.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ad1c0990d4.js" crossorigin="anonymous"></script>
+    <title>Encriptador</title>
+
+</head>
+
+<body>
+
+    <header>
+        <img class="logo" src="/imágenes/Logo.png" alt="icono-alura">
+    </header>
+    <main class="main">
+        <section class="primera-seccion">
+
+            <textarea id="texto-encriptado" class="campo-texto" cols="30" rows="10"
+                placeholder="Ingrese el texto aquí"></textarea>
+            <div class="aclaracion">
+                <h6><i class="fa-solid fa-circle-exclamation fa-sm"></i> Solo letras minúsculas y sin acentos</h6>
+            </div>
+
+            <div class="btn">
+                <button class="btnEncriptar" id="btnEncriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btnDesencriptar" id="btnDesencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+
+        </section>
+
+        <section class="campo-mensaje">
+
+            <textarea class="mensaje" id="texto-mensaje" readonly>
+            </textarea>
+
+            <div class="mensaje-muñeco" id="mensaje-muñeco">
+
+                <img class="imagen-muñeco" src="/imágenes/Muñeco.png" alt="muñeco">
+                <p class="first-line">Ningún mensaje fue encontrado</p>
+                <p class="second-line">Ingresa el texto que desees encriptar o desencriptar.</p>
+
+            </div>
+
+            <button class="copiar" id="btnCopiar" onclick="btnCopiar()">Copiar</button>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <span>Verónica Corvalán 2024</span>
+    </footer>
+
+
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+</body>
+
+</html>
